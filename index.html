@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Web Page</h1>
+      <button id="theme-toggle">Dark Mode</button>
+    </header>
+
+    <main>
+      <!-- Counter Section -->
+      <section>
+        <h2>Counter Game</h2>
+        <p id="counter-value">0</p>
+        <button id="increase-btn">Increase</button>
+        <button id="decrease-btn">Decrease</button>
+        <button id="reset-btn">Reset</button>
+      </section>
+
+      <!-- FAQ Section -->
+      <section>
+        <h2>FAQ</h2>
+        <div class="faq">
+          <h3 class="faq-question">What is JavaScript?</h3>
+          <p class="faq-answer">
+            JavaScript is a programming language that makes web pages
+            interactive.
+          </p>
+        </div>
+        <div class="faq">
+          <h3 class="faq-question">Why use it?</h3>
+          <p class="faq-answer">
+            Because it allows you to create dynamic, user-friendly websites.
+          </p>
+        </div>
+      </section>
+
+      <!-- Form Section -->
+      <section>
+        <h2>Sign Up Form</h2>
+        <form id="signup-form">
+          <label>Name: <input type="text" id="name" /></label>
+          <small class="error" id="name-error"></small><br />
+
+          <label>Email: <input type="text" id="email" /></label>
+          <small class="error" id="email-error"></small><br />
+
+          <label>Password: <input type="password" id="password" /></label>
+          <small class="error" id="password-error"></small><br />
+
+          <button type="submit">Submit</button>
+          <p id="form-success"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
